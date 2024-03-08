@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+
+  # API CYMIT QUIMICA
+  api:
+    build: python/
+    command: python3 -m http.server 9000
+    volumes:
+      - ../app:/app/
