@@ -1,0 +1,29 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+default_language_version:
+    python: python3
+repos:
+-   repo: https://github.com/pycqa/flake8
+    rev: 6.1.0
+    hooks:
+    - id: flake8
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+        # Validar que al final de un documento exista un salto de linea
+    -   id: end-of-file-fixer
+        # Validar que al final una linea no exista un espacio
+    -   id: trailing-whitespace
+        # Validamos los requirements
+    -   id: requirements-txt-fixer
+        # Simply check whether files parse as valid python.
+    -   id: check-ast
+-   repo: https://github.com/PyCQA/isort
+    rev: 5.12.0
+    hooks:
+    - id: isort
+-   repo: https://github.com/commitizen-tools/commitizen
+    rev: v3.13.0
+    hooks:
+    - id: commitizen
+      stages: [commit-msg]

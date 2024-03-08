@@ -1,0 +1,13 @@
+[tool.black]
+line-length = 99
+
+[tool.isort]
+profile = 'black'
+line_length = 99
+multi_line_output = 3
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.8.0"
+tag_format = "v$version"
+bump_message = "release $current_version → $new_version [skip-ci]"
