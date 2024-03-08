@@ -5,6 +5,6 @@ services:
   # API CYMIT QUIMICA
   api:
     build: python/
-    command: python3 -m http.server 9000
+    command: python crawler.py https://www.larodan.com/products/category/monounsaturated-fa/ -c 5
     volumes:
       - ../app:/app/
