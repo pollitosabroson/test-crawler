@@ -14,7 +14,7 @@ This script is designed to crawl a webpage, extract product URLs, and fetch prod
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/lister-crawler.git
+    git clone https://github.com/pollitosabroson/test-crawler.git
     ```
 
 2. Navigate to the project directory:
