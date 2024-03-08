@@ -32,7 +32,7 @@ This script is designed to crawl a webpage, extract product URLs, and fetch prod
 4. Run the script:
 
     ```bash
-    python main.py <url> [-c <concurrency>]
+    python crawler.py <url> [-c <concurrency>]
     ```
 
     Replace `<url>` with the URL of the webpage to be crawled. Optionally, you can specify the concurrency level with the `-c` or `--concurrency` flag. If not specified, the default concurrency level is 1.
@@ -42,6 +42,6 @@ This script is designed to crawl a webpage, extract product URLs, and fetch prod
 ## Example
 
 ```bash
-python main.py https://example.com -c 5
+python crawler.py https://example.com -c 5
 ```
 This command will crawl the webpage at https://example.com with a concurrency level of 5.
